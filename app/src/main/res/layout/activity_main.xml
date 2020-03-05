@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/equation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center|right"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:onClick="copyTextEquation"
+        android:background="@drawable/textview_background"
+        app:layout_constraintBottom_toTopOf="@+id/g12_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g12_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.125" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g43_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4375" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g62_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.625" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g81_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8125" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center|right"
+        android:textSize="32sp"
+        android:maxLines="1"
+        android:onClick="copyTextResults"
+        android:background="@drawable/textview_background"
+        app:layout_constraintBottom_toTopOf="@+id/g25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equation" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gv25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gv50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gv75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="7"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g43_75"
+        app:layout_constraintEnd_toStartOf="@+id/gv25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/g25" />
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="8"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g43_75"
+        app:layout_constraintEnd_toStartOf="@+id/gv50"
+        app:layout_constraintStart_toStartOf="@+id/gv25"
+        app:layout_constraintTop_toTopOf="@+id/g25" />
+
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="9"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g43_75"
+        app:layout_constraintEnd_toStartOf="@+id/gv75"
+        app:layout_constraintStart_toStartOf="@+id/gv50"
+        app:layout_constraintTop_toTopOf="@+id/g25" />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="4"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g62_5"
+        app:layout_constraintEnd_toStartOf="@+id/gv25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/g43_75" />
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="5"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g62_5"
+        app:layout_constraintEnd_toStartOf="@+id/gv50"
+        app:layout_constraintStart_toStartOf="@+id/gv25"
+        app:layout_constraintTop_toTopOf="@+id/g43_75" />
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="6"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g62_5"
+        app:layout_constraintEnd_toStartOf="@+id/gv75"
+        app:layout_constraintStart_toStartOf="@+id/gv50"
+        app:layout_constraintTop_toTopOf="@+id/g43_75" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="1"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g81_25"
+        app:layout_constraintEnd_toStartOf="@+id/gv25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/g62_5" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="2"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g81_25"
+        app:layout_constraintEnd_toStartOf="@+id/gv50"
+        app:layout_constraintStart_toStartOf="@+id/gv25"
+        app:layout_constraintTop_toTopOf="@+id/g62_5" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="3"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g81_25"
+        app:layout_constraintEnd_toStartOf="@+id/gv75"
+        app:layout_constraintStart_toStartOf="@+id/gv50"
+        app:layout_constraintTop_toTopOf="@+id/g62_5" />
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gv25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/g81_25" />
+
+    <Button
+        android:id="@+id/btn_decimal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="."
+        android:textSize="48sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gv50"
+        app:layout_constraintStart_toStartOf="@+id/gv25"
+        app:layout_constraintTop_toTopOf="@+id/g81_25" />
+
+    <Button
+        android:id="@+id/btn_equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="="
+        android:textSize="60sp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gv75"
+        app:layout_constraintStart_toStartOf="@+id/gv50"
+        app:layout_constraintTop_toTopOf="@+id/g81_25" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="C"
+        android:textSize="48sp"
+        android:background="@drawable/button_background_2"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gv75"
+        app:layout_constraintTop_toTopOf="@+id/g25" />
+
+    <Button
+        android:id="@+id/btn_divide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="÷"
+        android:textSize="48sp"
+        android:background="@drawable/button_background_2"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gv75"
+        app:layout_constraintTop_toBottomOf="@+id/btn_clear" />
+
+    <Button
+        android:id="@+id/btn_times"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="×"
+        android:textSize="48sp"
+        android:background="@drawable/button_background_2"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gv75"
+        app:layout_constraintTop_toTopOf="@+id/g55" />
+
+    <Button
+        android:id="@+id/btn_subtract"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="-"
+        android:textSize="48sp"
+        android:background="@drawable/button_background_2"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toTopOf="@+id/g85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gv75"
+        app:layout_constraintTop_toTopOf="@+id/g70" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="+"
+        android:textSize="48sp"
+        android:background="@drawable/button_background_2"
+        android:textColor="@android:color/white"
+        android:onClick="buttonPress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gv75"
+        app:layout_constraintTop_toTopOf="@+id/g85" />
+
+</android.support.constraint.ConstraintLayout>
